@@ -6,7 +6,7 @@ mask=$2
 
 convert $template $mask -alpha off -colorspace gray -compose CopyOpacity -composite $normalized_template_map_tmp
 
-brightness_delta=30
+brightness_delta=100
 generate_lighting_map_tmp='mpcs/generate_lighting_map_tmp.mpc'
 lighting_map='maps/lighting_map.png'
 
