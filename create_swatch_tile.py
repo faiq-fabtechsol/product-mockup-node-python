@@ -4,7 +4,7 @@ import os
 
 # folder with swatches
 folder = 'swatches'
-scale = 5
+scale = 1
 try:
     os.mkdir('tiled_images')
 except FileExistsError:
