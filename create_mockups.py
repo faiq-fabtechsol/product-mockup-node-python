@@ -13,14 +13,14 @@ progress = progressbar.ProgressBar(
 import os
 import cv2
 
-# Path to the folder containing images to be resized
-input_folder = "tiled_images"
+# # Path to the folder containing images to be resized
+# input_folder = "tiled_images"
 
-# Path to the folder where resized images will be saved
-output_folder = "tiled_images"
+# # Path to the folder where resized images will be saved
+# output_folder = "tiled_images"
 
 # Path to the template image whose shape will be used for resizing
-image_path = "base_images/template.jpeg"
+image_path = "base_images/template_resized.jpeg"
 
 # # Function to resize images
 # def resize_images(input_folder, output_folder, template_image_path):
@@ -51,7 +51,7 @@ for i, file in enumerate(files):
             'sh',
             'generate_mockup.sh',
             image_path,
-            'base_images/mask_11.png',
+            'base_images/mask_resized.png',
             os.path.join('tiled_images', file),
             'maps/displacement_map.png',
             'maps/lighting_map.png',
